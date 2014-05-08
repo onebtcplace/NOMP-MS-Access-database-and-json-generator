@@ -1,0 +1,87 @@
+{
+	"enabled": true,
+	"coin": "Bitcoin.json",
+	"address": "143xMaUgDzbaZkB5EQgJnQAgYvfN8ycA5m",
+	"rewardRecipients": {
+		"22851477d63a085dbc2398c8430af1c09e7343f6": 0.1,
+		"143xMaUgDzbaZkB5EQgJnQAgYvfN8ycA5m": 1,
+		"143xMaUgDzbaZkB5EQgJnQAgYvfN8ycA5m": 0.5
+	},
+	"blockRefreshInterval": 1000,
+	"txRefreshInterval": 20000,
+	"jobRebroadcastTimeout": 55,
+	"connectionTimeout": 600,
+	"emitInvalidBlockHashes": false,
+	"tcpProxyProtocol": false,
+	"validateWorkerUsername": true,
+	"paymentProcessing": {
+		"enabled": true,
+		"paymentInterval": 3600,
+		"minimumPayment": 0.01
+		"daemon": {
+			"host": "127.0.0.1",
+			"port": 8332,
+			"user": "RPCUSER",
+			"password": "RPCPASSWORD"
+		}
+	},
+	"redis": {
+		"host": "127.0.0.1",
+		"port": 6379
+	},
+	"mposMode": {
+		"enabled": false,
+		"host": "127.0.0.1",
+		"port": 3306,
+		"user": "me",
+		"password": "mypass",
+		"database": "ltc",
+		"checkPassword": true,
+		"autoCreateWorker": false
+	},
+	"banning": {
+		"enabled": true,
+		"time": 300,
+		"invalidPercent": 50,
+		"checkThreshold": 10,
+		"purgeInterval": 300
+	},
+	"ports": {
+		"3333": {
+			"diff": 4
+		},
+		"3533": {
+			"diff": 32,
+			"varDiff": {
+				"minDiff": 4,
+				"maxDiff": 512,
+				"targetTime": 15,
+				"retargetTime": 90,
+				"variancePercent": 30
+			}
+	},
+		"3733": {
+			"diff": 256
+			}
+		},
+	"daemons": [
+		{
+			"host": "127.0.0.1",
+			"port": 8332,
+			"user": "RPCUSER",
+			"password": "RPCPASSWORD"
+		},
+		{
+			"host": "127.0.0.1",
+			"port": 8335,
+			"user": "RPCUSER2",
+			"password": "RPCPASSWORD2"
+		}
+	],
+	"p2p": {
+		"enabled": true,
+		"host": "127.0.0.1",
+		"port": 8333,
+		"disableTransactions": true
+	}
+}
