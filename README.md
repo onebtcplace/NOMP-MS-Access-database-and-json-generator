@@ -56,8 +56,11 @@ Additional Coin Conf - For adding additional items such as addnode=, etc
 Any options not seen here the JSON file will be automatically created with the values from the NOMP example!
 
 Recipient One - Wallet address for fee to go to.
+
 Recipient One Fee - Percentage amount for fees.
+
 Recipient Two - Same as above; if left blank it will not generate in the json file. 
+
 NOMP Donation - Again if left blank will not generate in the json file. 
 
 Stratum Ports
