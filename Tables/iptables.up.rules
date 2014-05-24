@@ -6,9 +6,10 @@
 -I OUTPUT -o eth0 -d 0.0.0.0/0 -j ACCEPT
 -I INPUT -i eth0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 3333 -j ACCEPT
--A INPUT -p tcp -m tcp --dport 3533 -j ACCEPT
--A INPUT -p tcp -m tcp --dport 3733 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 6333 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 9333 -j ACCEPT
 -A INPUT -p udp -m udp --dport domain -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 20000 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 10000 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport https -j ACCEPT

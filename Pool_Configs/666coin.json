@@ -1,0 +1,57 @@
+{
+	"enabled": true,
+	"coin": "666coin.json",
+	"address": "sgfh5fg4h5g4fj5645j456df",
+	"rewardRecipients": {
+		"22851477d63a085dbc2398c8430af1c09e7343f6": 0.1,
+		"454646545464fgdhh": 1,
+		"hfghfg5h4f56g4h56fg4h56fgh": 0.5
+	},
+	"paymentProcessing": {
+		"enabled": true,
+		"paymentInterval": 60,
+		"minimumPayment": 0.001,
+		"daemon": {
+			"host": "127.0.0.1",
+			"port": 19991,
+			"user": "666coinrpc",
+			"password": "CrWA3gjysaDgUfhpbFJLyFZNPb4enKmZ6fE4fTuxqPvG"
+		}
+	},
+	"mposMode": {
+		"enabled": false,
+		"host": "127.0.0.1",
+		"port": 3306,
+		"user": "me",
+		"password": "mypass",
+		"database": "ltc",
+		"checkPassword": true,
+		"autoCreateWorker": false
+	},
+	"ports": {
+		"6333": {
+			"diff": 32,
+			"varDiff": {
+				"minDiff": 4,
+				"maxDiff": 2048,
+				"targetTime": 15,
+				"retargetTime": 90,
+				"variancePercent": 30
+			}
+		}
+	},
+	"daemons": [
+		{
+			"host": "127.0.0.1",
+			"port": 19991,
+			"user": "666coinrpc",
+			"password": "CrWA3gjysaDgUfhpbFJLyFZNPb4enKmZ6fE4fTuxqPvG"
+		}
+	],
+	"p2p": {
+		"enabled": false,
+		"host": "127.0.0.1",
+		"port": 16661,
+		"disableTransactions": true
+	}
+}
